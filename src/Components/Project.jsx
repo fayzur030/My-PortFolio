@@ -9,7 +9,7 @@ const projects = [
     title: 'E-Commerce Website',
     desc: 'A full-featured E-Commerce web application built with React, TypeScript, and Tailwind CSS. Features include product listing, shopping cart, checkout flow, and state management using Zustand. Fully responsive and optimized for modern devices.',
     img: E_Commerce_App,
-    link: 'https://fayzur-ecommerce.netlify.app',
+    link: 'https://fayzur-ecommerce.netlify.app/',
     github: 'https://github.com/fayzur030/ecommerce-app',
   },
   {
