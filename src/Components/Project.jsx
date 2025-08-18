@@ -10,7 +10,7 @@ const projects = [
     desc: 'A full-featured E-Commerce web application built with React, TypeScript, and Tailwind CSS. Features include product listing, shopping cart, checkout flow, and state management using Zustand. Fully responsive and optimized for modern devices.',
     img: E_Commerce_App,
     link: 'https://fayzur-ecommerce.netlify.app/',
-    github: 'https://github.com/fayzur030/ecommerce-app',
+    github: 'https://github.com/fayzur030',
   },
   {
     title: 'Recipe-Finder-App',
@@ -32,7 +32,7 @@ const Projects = () => {
   return (
     <section
       id='projects'
-      className='min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white px-6 py-20'
+      className='min-h-screen bg-[#0a0a1f] text-white px-6 py-20'
     >
       <div className='max-w-6xl mx-auto text-center mb-12'>
         <motion.h2
