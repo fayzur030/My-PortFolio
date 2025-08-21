@@ -97,7 +97,7 @@ const Hero = () => {
               href='/resume.pdf'
               className='px-6 py-3 border border-purple-500 rounded-xl hover:bg-purple-600/20 font-semibold'
             >
-              <a href=''>Download CV</a>
+              Download CV
             </motion.a>
           </div>
         </motion.div>
