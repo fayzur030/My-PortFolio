@@ -97,7 +97,7 @@ const Hero = () => {
               href='/resume.pdf'
               className='px-6 py-3 border border-purple-500 rounded-xl hover:bg-purple-600/20 font-semibold'
             >
-              Download CV
+              <a href=''>Download CV</a>
             </motion.a>
           </div>
         </motion.div>
@@ -106,16 +106,32 @@ const Hero = () => {
       {/* Custom Animations */}
       <style jsx>{`
         @keyframes blob1 {
-          0%, 100% { transform: translate(0,0) scale(1); }
-          50% { transform: translate(30px,-20px) scale(1.1); }
+          0%,
+          100% {
+            transform: translate(0, 0) scale(1);
+          }
+          50% {
+            transform: translate(30px, -20px) scale(1.1);
+          }
         }
         @keyframes blob2 {
-          0%, 100% { transform: translate(0,0) scale(1); }
-          50% { transform: translate(-25px,15px) scale(1.1); }
+          0%,
+          100% {
+            transform: translate(0, 0) scale(1);
+          }
+          50% {
+            transform: translate(-25px, 15px) scale(1.1);
+          }
         }
-        .animate-[blob1_25s_infinite] { animation: blob1 25s infinite ease-in-out; }
-        .animate-[blob2_30s_infinite] { animation: blob2 30s infinite ease-in-out; }
-        .animate-spin-slow { animation: spin 50s linear infinite; }
+        .animate-[blob1_25s_infinite] {
+          animation: blob1 25s infinite ease-in-out;
+        }
+        .animate-[blob2_30s_infinite] {
+          animation: blob2 30s infinite ease-in-out;
+        }
+        .animate-spin-slow {
+          animation: spin 50s linear infinite;
+        }
       `}</style>
     </section>
   )
