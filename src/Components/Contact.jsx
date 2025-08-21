@@ -27,14 +27,14 @@ const Contact = () => {
   }
 
   return (
-    <section id='contact' className='py-20 bg-[#0a0a1f] text-white'>
+    <section id='contact' className='py-16 sm:py-20 bg-[#0a0a1f] text-white'>
       {/* Heading */}
-      <div className='max-w-4xl mx-auto text-center mb-12'>
+      <div className='max-w-4xl mx-auto text-center mb-10 sm:mb-12 px-4'>
         <motion.h2
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className='text-4xl font-bold'
+          className='text-3xl sm:text-4xl md:text-5xl font-bold'
         >
           Contact <span className='text-blue-400'>Me</span>
         </motion.h2>
@@ -42,39 +42,39 @@ const Contact = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className='text-gray-400 mt-4'
+          className='text-gray-400 mt-3 sm:mt-4 text-sm sm:text-base md:text-lg'
         >
           Feel free to reach out for collaborations or just a friendly hello 👋
         </motion.p>
       </div>
 
       {/* Form */}
-      <div className='max-w-2xl mx-auto'>
+      <div className='max-w-2xl mx-auto px-4'>
         <form ref={form} onSubmit={sendEmail} className='space-y-4'>
           <input
             type='text'
-            name='user_name' // Template variable: {{user_name}}
+            name='user_name'
             placeholder='Your Name'
             required
-            className='w-full p-3 rounded-lg bg-[#0a0a1f] border border-gray-700 focus:border-blue-400 outline-none'
+            className='w-full p-3 rounded-lg bg-[#0a0a1f] border border-gray-700 focus:border-blue-400 outline-none text-sm sm:text-base'
           />
           <input
             type='email'
-            name='user_email' // Template variable: {{user_email}}
+            name='user_email'
             placeholder='Your Email'
             required
-            className='w-full p-3 rounded-lg bg-[#0a0a1f] border border-gray-700 focus:border-blue-400 outline-none'
+            className='w-full p-3 rounded-lg bg-[#0a0a1f] border border-gray-700 focus:border-blue-400 outline-none text-sm sm:text-base'
           />
           <textarea
-            name='message' // Template variable: {{message}}
+            name='message'
             rows={5}
             placeholder='Your Message'
             required
-            className='w-full p-3 rounded-lg bg-[#0a0a1f] border border-gray-700 resize-none focus:border-blue-400 outline-none'
+            className='w-full p-3 rounded-lg bg-[#0a0a1f] border border-gray-700 resize-none focus:border-blue-400 outline-none text-sm sm:text-base'
           ></textarea>
           <button
             type='submit'
-            className='w-full bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-black font-semibold py-3 rounded-lg hover:opacity-90 transition duration-300'
+            className='w-full bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-black font-semibold py-3 rounded-lg hover:opacity-90 transition duration-300 text-sm sm:text-base'
           >
             Send Message
           </button>
@@ -88,7 +88,7 @@ const Contact = () => {
             rel='noopener noreferrer'
             className='hover:text-blue-400 transition-colors duration-300'
           >
-            <Github size={32} />
+            <Github className='w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8' />
           </a>
           <a
             href='https://www.linkedin.com/in/md-fayzur-rahman-09723137b/'
@@ -96,7 +96,7 @@ const Contact = () => {
             rel='noopener noreferrer'
             className='hover:text-blue-400 transition-colors duration-300'
           >
-            <Linkedin size={32} />
+            <Linkedin className='w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8' />
           </a>
           <a
             href='https://instagram.com/yourusername'
@@ -104,7 +104,7 @@ const Contact = () => {
             rel='noopener noreferrer'
             className='hover:text-pink-400 transition-colors duration-300'
           >
-            <Instagram size={32} />
+            <Instagram className='w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8' />
           </a>
           <a
             href='https://t.me/yourusername'
@@ -112,7 +112,7 @@ const Contact = () => {
             rel='noopener noreferrer'
             className='hover:text-blue-400 transition-colors duration-300'
           >
-            <SendHorizontal size={32} />
+            <SendHorizontal className='w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8' />
           </a>
         </div>
       </div>
