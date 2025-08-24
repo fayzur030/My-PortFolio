@@ -91,7 +91,7 @@ const Contact = () => {
             <Github className='w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8' />
           </a>
           <a
-            href='https://www.linkedin.com/in/md-fayzur-rahman-09723137b/'
+            href='https://www.linkedin.com/in/md-fayzur-rahman-b25364380/'
             target='_blank'
             rel='noopener noreferrer'
             className='hover:text-blue-400 transition-colors duration-300'
