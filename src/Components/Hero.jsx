@@ -102,7 +102,7 @@ const Hero = () => {
               boxShadow: '0px 0px 25px rgba(236,72,153,0.8)',
             }}
             whileTap={{ scale: 0.95 }}
-            href='/resume.pdf'
+            href='/cv.pdf'
             download
             className='px-6 py-3 border border-pink-500 rounded-xl hover:bg-pink-600/20 font-semibold text-white text-center'
           >
