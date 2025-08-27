@@ -196,7 +196,7 @@ const SkillsPie = () => {
               {activeSkill.name}
             </div>
             <div
-              className={`text-lg transition-all duration-300 ${
+              className={`text-lg  transition-all duration-300 ${
                 activeIndex !== null
                   ? 'bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent'
                   : 'text-gray-300'

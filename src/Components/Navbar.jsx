@@ -1,33 +1,33 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
-import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react'
+import { Link } from 'react-scroll'
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [active, setActive] = useState('home');
+  const [isOpen, setIsOpen] = useState(false)
+  const [active, setActive] = useState('home')
 
-  const navItems = ['home', 'about', 'projects', 'skills', 'contact'];
+  const navItems = ['home', 'about', 'projects', 'skills', 'contact']
 
   // Scroll listener for active section
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY;
+      const scrollY = window.scrollY
       navItems.forEach((id) => {
-        const section = document.getElementById(id);
+        const section = document.getElementById(id)
         if (section) {
-          const top = section.offsetTop - 80;
-          const bottom = top + section.offsetHeight;
-          if (scrollY >= top && scrollY < bottom) setActive(id);
+          const top = section.offsetTop - 80
+          const bottom = top + section.offsetHeight
+          if (scrollY >= top && scrollY < bottom) setActive(id)
         }
-      });
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+      })
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <nav className='fixed w-full bg-[#0a0a1f]/80 backdrop-blur-md z-50 px-6 py-4 flex items-center justify-between'>
-      <div className='text-2xl font-bold text-white'>Fayzur</div>
+    <nav className='fixed w-full bg-gradient-to-b from-[#0f172a] via-[#111827] to-[#0f172a] backdrop-blur-md z-50 px-6 py-4 flex items-center justify-between'>
+      <div className='text-2xl font-bold text-white'>Fayzur Rahman</div>
 
       {/* Desktop Menu */}
       <ul className='hidden md:flex items-center gap-8 text-white font-medium'>
@@ -37,12 +37,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.1 }}
             className='relative cursor-pointer capitalize'
           >
-            <Link
-              to={item}
-              smooth={true}
-              duration={500}
-              offset={-70}
-            >
+            <Link to={item} smooth={true} duration={500} offset={-70}>
               {item}
             </Link>
 
@@ -66,7 +61,11 @@ const Navbar = () => {
           onClick={() => setIsOpen(!isOpen)}
           className='focus:outline-none text-white'
         >
-          {isOpen ? <span className='text-2xl'>&#10005;</span> : <span className='text-2xl'>&#9776;</span>}
+          {isOpen ? (
+            <span className='text-2xl'>&#10005;</span>
+          ) : (
+            <span className='text-2xl'>&#9776;</span>
+          )}
         </button>
       </div>
 
@@ -75,7 +74,7 @@ const Navbar = () => {
         <motion.ul
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className='absolute top-full left-0 w-full bg-[#0a0a1f]/90 backdrop-blur-md flex flex-col items-center gap-6 py-6 md:hidden text-white font-medium'
+          className='absolute top-full left-0 w-full bg-gradient-to-b from-[#0f172a] via-[#111827] to-[#0f172a] backdrop-blur-md flex flex-col items-center gap-6 py-6 md:hidden text-white font-medium'
         >
           {navItems.map((item) => (
             <li key={item} className='cursor-pointer capitalize'>
@@ -93,7 +92,7 @@ const Navbar = () => {
         </motion.ul>
       )}
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
