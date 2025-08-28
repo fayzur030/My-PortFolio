@@ -29,14 +29,13 @@ const COLORS = [
 
 const SkillsPie = () => {
   const [activeIndex, setActiveIndex] = useState(null)
-
   const activeSkill =
     activeIndex !== null ? data[activeIndex] : { name: 'Skills', value: 100 }
 
   return (
     <section
       id='skills'
-      className='relative min-h-[70vh] flex flex-col items-center justify-center bg-[#0a0a1f] text-white py-16 px-6 overflow-hidden'
+      className='relative min-h-[70vh] flex flex-col items-center justify-center bg-gray-900 text-white py-16 px-6 overflow-hidden'
     >
       {/* Section heading */}
       <div className='max-w-6xl mx-auto text-center mb-12'>
@@ -64,7 +63,7 @@ const SkillsPie = () => {
 
       {/* Main content: legend + pie chart */}
       <div className='max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center'>
-        {/* left side: legend */}
+        {/* Left side: legend */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -108,7 +107,7 @@ const SkillsPie = () => {
           </div>
         </motion.div>
 
-        {/* right side: pie chart */}
+        {/* Right side: pie chart */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -118,6 +117,7 @@ const SkillsPie = () => {
         >
           <ResponsiveContainer>
             <PieChart>
+              {/* Gradients */}
               <defs>
                 <linearGradient id='grad1' x1='0' y1='0' x2='1' y2='1'>
                   <stop offset='0%' stopColor='#60a5fa' />
@@ -174,14 +174,16 @@ const SkillsPie = () => {
                   borderRadius: 12,
                   color: '#fff',
                   backdropFilter: 'blur(6px)',
+                  fontWeight: 500,
                 }}
+                itemStyle={{ color: '#fff' }}
                 formatter={(value, name) => [`${value}%`, name]}
               />
               <Legend verticalAlign='bottom' height={24} />
             </PieChart>
           </ResponsiveContainer>
 
-          {/* center text */}
+          {/* Center text */}
           <div className='pointer-events-none absolute inset-0 flex flex-col items-center justify-center'>
             <div className='text-sm font-semibold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent'>
               My Skill
@@ -196,7 +198,7 @@ const SkillsPie = () => {
               {activeSkill.name}
             </div>
             <div
-              className={`text-lg  transition-all duration-300 ${
+              className={`text-lg transition-all duration-300 ${
                 activeIndex !== null
                   ? 'bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent'
                   : 'text-gray-300'

@@ -41,7 +41,10 @@ const item = {
 
 const Projects = () => {
   return (
-    <section id='A' className='min-h-screen bg-gray-900 text-white px-6 py-20'>
+    <section
+      id='projects'
+      className='min-h-screen bg-gray-900 text-white px-6 py-20'
+    >
       {/* Heading */}
       <motion.div
         variants={container}
