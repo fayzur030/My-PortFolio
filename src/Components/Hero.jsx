@@ -1,7 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Typewriter } from 'react-simple-typewriter'
-import profileImage from '../assets/hero.png'
+// import profileImage from '../assets/hero.png'
+import profileImage2 from '../assets/profileImage.jpg'
 
 const Hero = () => {
   return (
@@ -22,7 +23,7 @@ const Hero = () => {
           transition={{ type: 'spring', stiffness: 120 }}
         >
           <img
-            src={profileImage}
+            src={profileImage2}
             alt='Fayzur'
             className='w-full h-full object-cover'
           />

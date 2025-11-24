@@ -1,10 +1,10 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 import { FaGithub } from 'react-icons/fa'
 import RecipeFinder from '../assets/project1.png'
 import weatherApp from '../assets/Weather-app.jpg'
 import E_Commerce_App from '../assets/e-commerce.jpg'
 import movieApp from '../assets/Movie App.jpg'
+import todo from '../assets/todo.png'
 
 const projects = [
   {
@@ -33,6 +33,13 @@ const projects = [
     desc: 'React, Tailwind CSS & OpenWeather API. Real-time weather updates, responsive design.',
     img: weatherApp,
     link: 'https://weather-app-two-zeta-31.vercel.app',
+    github: 'https://github.com/fayzur030',
+  },
+  {
+    title: 'To-Do App',
+    desc: 'React, Tailwind CSS & OpenWeather API. Real-time weather updates, responsive design.',
+    img: todo,
+    link: 'https://todo-app-sage-six-10.vercel.app/',
     github: 'https://github.com/fayzur030',
   },
 ]
