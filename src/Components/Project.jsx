@@ -4,8 +4,16 @@ import { FaGithub } from 'react-icons/fa'
 import RecipeFinder from '../assets/project1.png'
 import weatherApp from '../assets/Weather-app.jpg'
 import E_Commerce_App from '../assets/e-commerce.jpg'
+import movieApp from '../assets/Movie App.jpg'
 
 const projects = [
+  {
+    title: 'Movie App',
+    desc: 'A responsive React & TypeScript app to browse, search, and watch trailers of trending movies using the TMDb API. Features smooth animations, detailed movie info, and mobile-friendly design.',
+    img: movieApp,
+    link: 'https://movie-app-swart-six-28.vercel.app/',
+    github: 'https://github.com/fayzur030',
+  },
   {
     title: 'E-Commerce Website',
     desc: 'React, TypeScript & Tailwind CSS. Features: product listing, cart, checkout flow, Zustand for state management. Fully responsive.',
