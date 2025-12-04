@@ -1,17 +1,15 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Typewriter } from 'react-simple-typewriter'
-// import profileImage from '../assets/hero.png'
-// import profileImage2 from '../assets/profileImage.jpg'
-import profileImage3 from '../assets/Whatsapp.jpg'
+import profileImage from '../assets/Whatsapp.jpg'
 
 const Hero = () => {
   return (
     <section
       id='home'
-      className='relative flex flex-col md:flex-row items-center justify-center min-h-screen text-center md:text-left overflow-hidden bg-gradient-to-b from-[#0f172a] via-[#111827] to-[#0f172a] px-6 md:px-20 pt-32 md:pt-20'
+      className='relative flex flex-col md:flex-row items-center justify-center min-h-screen text-center md:text-left overflow-hidden bg-gray-950 px-6 md:px-20 pt-32 md:pt-20'
     >
-      {/* Right Image (Mobile first) */}
+      {/* Right Image */}
       <motion.div
         className='w-full md:w-1/2 flex justify-center md:justify-end mb-10 md:mb-0 order-1 md:order-2'
         initial={{ opacity: 0, y: 20 }}
@@ -24,8 +22,8 @@ const Hero = () => {
           transition={{ type: 'spring', stiffness: 120 }}
         >
           <img
-            src={profileImage3}
-            alt='Fayzur'
+            src={profileImage}
+            alt='Fayzur Rahman - Frontend Developer'
             className='w-full h-full object-cover'
           />
         </motion.div>
@@ -68,20 +66,21 @@ const Hero = () => {
           />
         </motion.h2>
 
-        <p className='text-gray-400 mb-10 leading-relaxed'>
+        <p className='text-gray-400 mb-10 leading-relaxed max-w-xl text-justify md:text-left'>
           I build{' '}
           <span className='text-teal-400 font-medium'>
             modern, responsive web apps
           </span>{' '}
           with{' '}
           <span className='text-indigo-500 font-medium'>
-            React, TypeScript, Tailwind CSS
+            React, Next js, TypeScript, Tailwind CSS, Framer motion
           </span>{' '}
           and create{' '}
           <span className='text-pink-400 font-medium'>
             premium user experiences
           </span>
-          .
+          . My work is optimized for global audiences and international
+          marketplaces.
         </p>
 
         {/* CTA Buttons */}

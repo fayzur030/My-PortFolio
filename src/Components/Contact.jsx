@@ -27,7 +27,7 @@ const Contact = () => {
   }
 
   return (
-    <section id='contact' className='py-16 sm:py-20 bg-gray-900 text-white'>
+    <section id='contact' className='py-16 sm:py-20  bg-gray-950  text-white'>
       {/* Heading */}
       <div className='max-w-4xl mx-auto text-center mb-10 sm:mb-12 px-4'>
         <motion.h2
@@ -56,21 +56,21 @@ const Contact = () => {
             name='user_name'
             placeholder='Your Name'
             required
-            className='w-full p-3 rounded-lg bg-gray-900 border border-gray-700 focus:border-blue-400 outline-none text-sm sm:text-base'
+            className='w-full p-3 rounded-lg bg-gray-900 border border-gray-900 focus:border-blue-400 outline-none text-sm sm:text-base'
           />
           <input
             type='email'
             name='user_email'
             placeholder='Your Email'
             required
-            className='w-full p-3 rounded-lg bg-gray-900 border border-gray-700 focus:border-blue-400 outline-none text-sm sm:text-base'
+            className='w-full p-3 rounded-lg bg-gray-900 border border-gray-900 focus:border-blue-400 outline-none text-sm sm:text-base'
           />
           <textarea
             name='message'
             rows={5}
             placeholder='Your Message'
             required
-            className='w-full p-3 rounded-lg bg-gray-900 border border-gray-700 resize-none focus:border-blue-400 outline-none text-sm sm:text-base'
+            className='w-full p-3 rounded-lg bg-gray-900 border border-gray-900 resize-none focus:border-blue-400 outline-none text-sm sm:text-base'
           ></textarea>
           <button
             type='submit'

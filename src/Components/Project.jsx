@@ -58,14 +58,14 @@ const Projects = () => {
   return (
     <section
       id='projects'
-      className='min-h-screen bg-gray-900 text-white px-6 py-20'
+      className='min-h-screen bg-gray-950  text-white px-6 py-20'
     >
       {/* Heading */}
       <motion.div
         variants={container}
         initial='hidden'
         whileInView='show'
-        className='text-center max-w-6xl mx-auto mb-12'
+        className='text-center max-w-7xl mx-auto mb-12'
       >
         <motion.h2 variants={item} className='text-4xl md:text-5xl font-bold'>
           My <span className='text-blue-400'>Projects</span>

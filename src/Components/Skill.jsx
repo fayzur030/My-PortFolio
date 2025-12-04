@@ -35,7 +35,7 @@ const SkillsPie = () => {
   return (
     <section
       id='skills'
-      className='relative min-h-[70vh] flex flex-col items-center justify-center bg-gray-900 text-white py-16 px-6 overflow-hidden'
+      className='relative min-h-[70vh]  flex flex-col items-center justify-center bg-gray-950  text-white py-16 px-6 overflow-hidden'
     >
       {/* Section heading */}
       <div className='max-w-6xl mx-auto text-center mb-12'>
