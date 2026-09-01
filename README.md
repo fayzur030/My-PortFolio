@@ -1,5 +1,5 @@
 # React + Vite
-
+Personal portfolio website showcasing my skills, projects, experience, and frontend development journey. Built with Next.js, TypeScript & Tailwind CSS. Live: YOUR_LIVE_LINK
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
